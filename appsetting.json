@@ -2,5 +2,5 @@
     "VlnPasswordSaltKey": "ShVmYq3t6w9z$C&F)J@NcRfUjWnZr4u7",
     "ResetPasswordLinkExpiry": 4,
     "StafflineApiUrl": "http://stafflineapi-beta.compunnel.com/"
-    "StafflineApiUrl": "STAFFLINEAPIURL_DEV"
+    "StafflineApiUrl": "_STAFFLINEAPIURL_DEV_"
   },
