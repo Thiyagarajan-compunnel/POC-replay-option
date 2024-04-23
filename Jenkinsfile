@@ -11,14 +11,14 @@ pipeline{
         }
         stage("Checkout code") {
             steps {
-                git url: 'https://github.com/Thiyagarajan-compunnel/POC-replay-option.git', branch: 'development'
+                git url: 'https://github.com/Thiyagarajan-compunnel/POC-replay-option.git', branch: 'main'
             }
         }
         stage('Configuring appsetting.json'){
             when {
                 allOf {
                     expression { environment name: 'DEPLOYMENT_ENVIRONMENT', value: 'dev'}
-                    expression { environment name: 'DEPLOYMENT_ENVIRONMENT', value: 'qa'}
+                    // expression { environment name: 'DEPLOYMENT_ENVIRONMENT', value: 'qa'}
                 }
             }
             environment{
