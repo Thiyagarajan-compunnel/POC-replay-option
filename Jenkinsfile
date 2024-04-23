@@ -9,11 +9,11 @@ pipeline{
                 cleanWs()
             }
         }
-        // stage("Checkout code") {
-        //     steps {
-        //         git url: 'https://github.com/Thiyagarajan-compunnel/POC-replay-option.git', branch: 'development'
-        //     }
-        // }
+        stage("Checkout code") {
+            steps {
+                git url: 'https://github.com/Thiyagarajan-compunnel/POC-replay-option.git', branch: 'development'
+            }
+        }
         stage('Configuring appsetting.json'){
             when {
                 allOf {
