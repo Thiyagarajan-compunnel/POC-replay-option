@@ -1,5 +1,20 @@
   "DefaultSettings": {
     "VlnPasswordSaltKey": "ShVmYq3t6w9z$C&F)J@NcRfUjWnZr4u7",
     "ResetPasswordLinkExpiry": 4,
-    "StafflineApiUrl": _STAFFLINEAPIURLDEV_
+    "StafflineApiUrl": _STAFFLINEAPIURL_
   },
+"ConnectionString": {
+        "DatabaseConnection": _DATABASECONNECTIONSTRING_
+    },
+	
+-- development
+
+ "JwtSettings": {
+        "Issuer": _ISSUER_
+    },
+
+ "DefaultSettings": {
+        "StafflineApiUrl": _STAFFLINEAPIURL_
+    },
+
+  "AzureKeyVaultUrl": _AKVURL_
