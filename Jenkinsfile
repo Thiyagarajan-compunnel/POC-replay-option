@@ -33,7 +33,7 @@ pipeline{
                 echo "${STAFFLINEAPIURL}"
                 echo "${ISSUER}"
                 echo "${AKVURL}"
-                sed -i 's|_STAFFLINEAPIURL_|${STAFFLINEAPIURL}|g' ${WORKSPACE}/appsetting.json; \
+                sed -i 's|_STAFFLINEAPIURL_|${STAFFLINEAPIURL}|g' appsetting.json; \
                 sed -i 's|_DATABASECONNECTIONSTRING_|${DATABASECONNECTIONSTRING}|g' appsetting.json; \
                 sed -i 's|_ISSUER_|${ISSUER}|g' appsetting.json; \
                 sed -i 's|_AKVURL_|${AKVURL}|g' appsetting.json;
@@ -58,7 +58,7 @@ pipeline{
                 echo "${STAFFLINEAPIURL}"
                 echo "${ISSUER}"
                 echo "${AKVURL}"
-                sed -i 's|_STAFFLINEAPIURL_|${STAFFLINEAPIURL}|g' ${WORKSPACE}/appsetting.json; \
+                sed -i 's|_STAFFLINEAPIURL_|${STAFFLINEAPIURL}|g' appsetting.json; \
                 sed -i 's|_DATABASECONNECTIONSTRING_|${DATABASECONNECTIONSTRING}|g' appsetting.json; \
                 sed -i 's|_ISSUER_|${ISSUER}|g' appsetting.json; \
                 sed -i 's|_AKVURL_|${AKVURL}|g' appsetting.json;
